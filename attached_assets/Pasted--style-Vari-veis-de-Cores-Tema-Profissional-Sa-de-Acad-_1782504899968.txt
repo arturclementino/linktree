@@ -1,0 +1,178 @@
+<style>
+    /* Variáveis de Cores (Tema Profissional/Saúde/Acadêmico) */
+    :root {
+        --bg-color: #f4f7f6;
+        --text-main: #2d3748;
+        --text-muted: #718096;
+        --card-bg: #ffffff;
+        --btn-bg: #ffffff;
+        --btn-border: #e2e8f0;
+        --btn-hover-bg: #2b6cb0;
+        --btn-hover-text: #ffffff;
+        --accent-color: #2b6cb0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+        /* Fundo sutil com gradiente */
+        background: linear-gradient(135deg, #f4f7f6 0%, #e2e8f0 100%);
+    }
+
+    .container {
+        width: 100%;
+        max-width: 480px;
+        text-align: center;
+    }
+
+    /* Área do Perfil */
+    .profile-container {
+        margin-bottom: 2rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--card-bg);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+        /* Caso a foto não carregue de imediato, mostra uma cor de fundo */
+        background-color: var(--text-muted); 
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--text-main);
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--accent-color);
+        margin-bottom: 0.25rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+        padding: 0 1rem;
+    }
+
+    /* Lista de Links */
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .link-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        background-color: var(--btn-bg);
+        color: var(--text-main);
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 1rem;
+        border: 1px solid var(--btn-border);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .link-btn i {
+        position: absolute;
+        left: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .link-btn:hover {
+        background-color: var(--btn-hover-bg);
+        color: var(--btn-hover-text);
+        border-color: var(--btn-hover-bg);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(43, 108, 176, 0.2);
+    }
+
+    /* Rodapé */
+    .footer {
+        margin-top: 3rem;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+    }
+</style>
+
+
+<div class="container">
+    
+    <!-- Cabeçalho / Perfil -->
+    <div class="profile-container">
+        <!-- COLOQUE SUA FOTO AQUI: Salve sua foto como 'perfil.jpg' na mesma pasta deste arquivo -->
+        <img src="perfil.jpg" alt="Artur Eduardo Clementino da Cruz" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Artur+Clementino&background=2b6cb0&color=fff&size=256'">
+        
+        <h1>Artur Clementino</h1>
+        <p class="subtitle">Enfermagem & Pesquisa</p>
+        <p class="description">Competência Cultural em Enfermagem: Barreiras Estruturais e Estratégias de Cuidado.</p>
+    </div>
+
+    <!-- Botões de Links -->
+    <div class="links-container">
+        
+        <!-- Link do WhatsApp (Já formatado com seu número) -->
+        <a href="https://wa.me/5531971670159?text=Olá%20Artur,%20assisti%20sua%20apresentação%20de%20TCC%20e%20gostaria%20de%20falar%20com%20você!" target="_blank" class="link-btn">
+            <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+            Fale comigo no WhatsApp
+        </a>
+
+        <!-- Link do LinkedIn -->
+        <a href="https://linkedin.com/in/arturclementino" target="_blank" class="link-btn">
+            <i class="fab fa-linkedin" style="color: #0077b5;"></i>
+            Conecte-se no LinkedIn
+        </a>
+
+        <!-- Link do E-mail Institucional -->
+        <a href="mailto:artur.clementino@soukennedy.com.br" class="link-btn">
+            <i class="fas fa-envelope"></i>
+            E-mail Institucional
+        </a>
+
+        <!-- Link do Instagram -->
+        <a href="https://instagram.com/arturcclementino" target="_blank" class="link-btn">
+            <i class="fab fa-instagram" style="color: #E1306C;"></i>
+            Siga no Instagram
+        </a>
+
+        <!-- Link do Facebook -->
+        <a href="https://facebook.com/1077788210198678" target="_blank" class="link-btn">
+            <i class="fab fa-facebook" style="color: #1877F2;"></i>
+            Perfil no Facebook
+        </a>
+
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>&copy; 2026 Artur E. Clementino da Cruz</p>
+    </div>
+
+</div>
