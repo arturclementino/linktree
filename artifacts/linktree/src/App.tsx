@@ -31,13 +31,7 @@ const C = {
 } as const;
 
 const links = [
-  {
-    id: 'lattes',
-    url: 'https://lattes.cnpq.br/1077788210198678',
-    label: 'Currículo Lattes',
-    icon: FaGraduationCap,
-    color: C.terracotta,
-  },
+  // 1. Contato imediato — quem acabou de assistir a defesa quer falar agora
   {
     id: 'whatsapp',
     url: 'https://wa.me/5531971670159?text=Olá%20Artur,%20assisti%20sua%20apresentação%20de%20TCC%20e%20gostaria%20de%20falar%20com%20você!',
@@ -45,6 +39,15 @@ const links = [
     icon: FaWhatsapp,
     color: '#25D366',
   },
+  // 2. Currículo acadêmico — credencial principal do pesquisador
+  {
+    id: 'lattes',
+    url: 'https://lattes.cnpq.br/1077788210198678',
+    label: 'Currículo Lattes',
+    icon: FaGraduationCap,
+    color: C.terracotta,
+  },
+  // 3. Rede profissional — networking pós-defesa
   {
     id: 'linkedin',
     url: 'https://linkedin.com/in/arturclementino',
@@ -52,6 +55,7 @@ const links = [
     icon: FaLinkedin,
     color: '#0077b5',
   },
+  // 4. Contato formal
   {
     id: 'email',
     url: 'mailto:artur.clementino@soukennedy.com.br',
@@ -59,6 +63,7 @@ const links = [
     icon: FaEnvelope,
     color: C.terracotta,
   },
+  // 5. Acompanhamento pessoal / divulgação científica
   {
     id: 'instagram',
     url: 'https://instagram.com/arturcclementino',
