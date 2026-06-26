@@ -1,6 +1,6 @@
-# [Project name]
+# Artur Clementino — Linktree
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Página pessoal de links (estilo Linktree) para Artur Clementino, estudante de Enfermagem e pesquisador acadêmico.
 
 ## Run & Operate
 
